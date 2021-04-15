@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    height: 600px;
+    width: 800px;
+    background: burlywood;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+.item1{
+    background: chartreuse;
+
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item2{
+    background: cornflowerblue;
+}
+
+.item3{
+    background: darkgray;
+}
+
+.item4{
+    background: darkorchid;
+}
