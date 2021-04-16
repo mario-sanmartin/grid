@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    height: 600px;
+    width: 700px;
+    background: #09024b;
+    grid-gap: 1px;
+    /* grid-template-columns:  repeat(3, minmax(100px,200px)); */
+    /* grid-template-columns: repeat(2, minmax(80px, 1fr) minmax(20px,200px)); */
+/* 
+    grid-template-columns: repeat(auto-fill, 100px);
+    Crea la misma cantidad de elementos por su ancho ejemplo si el ancho son 700px y le asignamos 100px
+    a cada columna nos creara 7 elementos de 100 gracias a auto-fill */
+
+    /* grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); */
+    /* Ajusta el contenido al tamaño del contenedor padre 
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+    */
+    grid-template-rows: repeat(auto-fit, minmax(20px,1fr));
+    
+}
+
+.grid > *{
+    color: #ffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+header{
+    background: chartreuse;
+ 
+}
+
+main{
+    background: cornflowerblue;
+}
+
+aside{
+    background: darkgray;
+}
+
+footer{
+    background: darkorchid;
+    
+}
