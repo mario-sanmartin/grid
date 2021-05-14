@@ -1,0 +1,58 @@
+/* :root{
+    --imagen1:url(1.jpg);
+    --imagen2:url(2.jpg);
+    --imagen3:url(3.jpg);
+    --imagen4:url(4.jpg);
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    outline: 2px solid #000;
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    margin: 30px auto;
+
+    display: grid; /*Grid por defecto esta en filas*
+    
+    /*centrado verticalmente en base a sus filas
+    align-items: stretch | center | start 1 end;
+    */
+    /*Se encarga de manipular los elementos horizontalmente
+    justify-items: stretch | start | end | center ;
+        */
+    /* grid-auto-flow: column; */
+}
+
+.element{
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.element1{
+    background-color: crimson;
+    background-image: var(--imagen1);
+}
+
+.element2{
+    background-color: dodgerblue;
+    background-image: var(--imagen2);
+}
+
+.element3{
+    background-color: coral;
+    background-image: var(--imagen3);
+}
+
+.element4{
+    background-color: darkslateblue;
+    background-image: var(--imagen4);
+}
+
