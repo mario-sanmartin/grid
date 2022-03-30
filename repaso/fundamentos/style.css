@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 600px;
+    /* width: 800px; */
+    background: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/*Todas las clases que comiencen con el nombre item se le asignara ese color*/
+[class^="item"]{
+    color: #fff;
+}
+
+.item1{
+    background: blue;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item2{
+    background: green;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item3{
+    background:yellow;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+
+.item4{
+    background: pink;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
