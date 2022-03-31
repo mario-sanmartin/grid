@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 600px;
+    width: 800px;
+    background: black;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* grid-template-columns: repeat(2,1fr 2fr);
+    grid-template-rows: 1fr 1fr 1fr; */
+    /*Filas - Columnas*/
+    grid: repeat(3,1fr) / repeat(4,1fr);
+}
+
+/*Todas las clases que comiencen con el nombre item se le asignara ese color*/
+[class^="item"]{
+    color: #fff;
+}
+
+a{
+    text-decoration: dotted;
+    color: white;
+}
+
+.item1{
+    background: blue;
+
+}
+
+.item2{
+    background: green;
+   
+    
+
+}
+
+.item3{
+    background: yellowgreen;
+
+}
+
+.item4{
+    background: orange;
+  
+
+}
+
+.item5{
+    background: blue;
+ 
+}
+
+.item6{
+    background: green;
+ 
+    
+
+}
+
+.item7{
+    background: yellowgreen;
+    
+}
+
+.item8{
+    background: orange;
+ 
+
+}
