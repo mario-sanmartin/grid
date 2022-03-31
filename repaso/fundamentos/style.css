@@ -20,33 +20,47 @@
 
 .item1{
     background: blue;
-    grid-column-start: 1;
+    /* Shorthand */
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    /* grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 2; */
 }
 
 .item2{
     background: green;
+    grid-column:  1 / 4;
+    grid-row: 2/3;
+    
+    /*     
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 3; */
 }
 
 .item3{
     background: yellowgreen;
+    grid-column: 4/5;
+    grid-row: 2/4;
+
+/*     
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
-    grid-row-end: 4;
+    grid-row-end: 4; */
     
 }
 
 .item4{
     background: orange;
+    grid-column: 1/4;
+    grid-row: 3/4;
+/*     
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-end: 4; */
 }
