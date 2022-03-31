@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 600px;
+    width: 800px;
+    background: black;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* grid-template-columns: repeat(2,1fr 2fr);
+    grid-template-rows: 1fr 1fr 1fr; */
+    /*Filas - Columnas*/
+    grid: repeat(4,1fr) / repeat(4,1fr);
+}
+
+/*Todas las clases que comiencen con el nombre item se le asignara ese color*/
+[class^="item"]{
+    color: #fff;
+}
+
+a{
+    text-decoration: dotted;
+    color: white;
+}
+
+.item1{
+    background: blue;
+    /* Shorthand */
+    /* grid-column: 1 / 5;
+    grid-row: 1 / 2; */
+ 
+    /* Shorthand nivel 2
+        InicioR / InicioC / TerminoR /TerminoC
+    */
+    grid-area: 1/1/2/5;
+}
+
+.item2{
+    background: green;
+    grid-column:  1 / 4;
+    grid-row: 2/3;
+    
+
+}
+
+.item3{
+    background: yellowgreen;
+    grid-column: 4/5;
+    grid-row: 2/4;    
+}
+
+.item4{
+    background: orange;
+    grid-column: 1/4;
+    grid-row: 3/4;
+
+}
