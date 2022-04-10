@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 600px;
+    width: 800px;
+    background: black;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /*Grid content = cuadricula*/
+
+    /*Por defecto el flow es row grid-auto-flow:row;*/
+    grid-auto-flow:  dense;
+    /*Filas Row -          Columnas Column*/
+    grid: repeat(3,1fr) / repeat(2,1fr);
+
+    /*Ante el caso que los elementos salgan del
+    grid content usaremos estas opciones: */
+    /* grid-auto-rows: 200px;
+    grid-auto-columns: 100px; */
+}
+
+/*Todas las clases que comiencen con el nombre item se le asignara ese color*/
+[class^="item"]{
+    color: #fff;
+}
+
+a{
+    text-decoration: dotted;
+    color: white;
+}
+
+.item1{
+    background: blue;
+    grid-column: span 2;
+
+}
+
+.item2{
+    background: green;
+    
+   
+    
+
+}
+
+.item3{
+    background: yellowgreen;
+
+}
+
+.item4{
+    background: orange;
+  
+
+}
+
+.item5{
+    background: blue;
+ 
+}
+
+.item6{
+    background: green;
+ 
+    
+
+}
